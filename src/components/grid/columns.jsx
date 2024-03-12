@@ -1,3 +1,5 @@
+const cellWidth = "69px";
+
 export const columnDef = [
   {
     accessorFn: (row) =>
@@ -14,7 +16,7 @@ export const columnDef = [
         <button
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.19)",
-            width: "79px",
+            width: cellWidth,
             borderRadius: "5px",
           }}
         >
@@ -31,7 +33,7 @@ export const columnDef = [
         <button
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.19)",
-            width: "79px",
+            width: cellWidth,
             borderRadius: "5px",
           }}
         >
@@ -50,7 +52,7 @@ export const columnDef = [
             backgroundColor: "rgba(255, 255, 255, 0.19)",
 
             borderRadius: "5px",
-            width: "79px",
+            width: cellWidth,
 
             textAlign: "center",
           }}

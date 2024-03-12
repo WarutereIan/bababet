@@ -11,8 +11,8 @@ const FeaturedGameBanner = () => {
   return (
     <div
       style={{
-        height: "67.2%",
-        width: "70.12%",
+        height: "100%",
+        width: "100%",
         backgroundColor: "rgba(0,0,0,0.4)",
         top: "5%",
         borderRadius: "10px",

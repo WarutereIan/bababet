@@ -1,13 +1,14 @@
 table {
   /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
   border: 1px;
-  width: fit-content;
+  max-width: "50%";
+  overflow: hidden;
 }
 
 table td,
 table th {
   /* border: 1px solid #ddd; */
-  padding: 4px;
+  padding: 2px;
 }
 
 table th {
@@ -18,9 +19,6 @@ table th {
 
 table td {
   font-family: Inter;
-  font-size: 13;
-  font-weight: 600;
-  line-height: 1.18;
 }
 
 /* table tr:nth-child(even) {
@@ -33,8 +31,8 @@ table tr:hover {
 
 table th,
 tfoot td {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-align: center;
 
   color: #e5c6bb;

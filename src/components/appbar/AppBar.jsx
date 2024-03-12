@@ -64,7 +64,7 @@ function ResponsiveAppBar() {
             href="#"
             style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
           >
-            Home
+            Categories
           </a>
         </li>
         <li
@@ -78,7 +78,7 @@ function ResponsiveAppBar() {
             href="#"
             style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
           >
-            Home
+            Live Bets
           </a>
         </li>
         <li
@@ -92,7 +92,7 @@ function ResponsiveAppBar() {
             href="#"
             style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
           >
-            Home
+            Casino Games
           </a>
         </li>
         <li
@@ -106,21 +106,21 @@ function ResponsiveAppBar() {
             href="#"
             style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
           >
-            Home
+            Promotions
           </a>
         </li>
         <li
           style={{
             listStyle: "none",
             padding: "0 20px",
-            position: "relative",
+            //position: "relative",
           }}
         >
           <a
             href="#"
             style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
           >
-            Home
+            About Us
           </a>
         </li>
       </ul>

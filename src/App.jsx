@@ -1,9 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./navigation/HomePage";
-import ResponsiveAppBar from "./components/appbar/AppBar";
 
 import "./App.css";
-import { AppSideBar } from "./components/sidebar/AppSideBar";
 
 function App() {
   return (

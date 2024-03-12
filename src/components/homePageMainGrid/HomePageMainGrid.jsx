@@ -5,10 +5,10 @@ import {
 } from "@tanstack/react-table";
 import { gamesData } from "../../utils/mockData";
 import { columnDef } from "./columns";
-import "./table.css";
+
 import { useMemo } from "react";
 
-const Grid1L = () => {
+const HomePageMainGrid = () => {
   const finalData = useMemo(() => gamesData, []);
   const finalColumnDef = useMemo(() => columnDef, []);
 
@@ -17,16 +17,15 @@ const Grid1L = () => {
     data: finalData,
     getCoreRowModel: getCoreRowModel(),
   });
-
   return (
     <div
       style={{
-        marginTop: "5%",
+        backgroundColor: "#1E1E1E",
         borderRadius: "5px",
-        paddingLeft: "5%",
-        paddingRight: "5%",
+        height: "30%",
+        width: "100%",
         overflow: "auto",
-        width: "80%",
+        marginTop: "1%",
       }}
     >
       <table>
@@ -71,4 +70,4 @@ const Grid1L = () => {
   );
 };
 
-export default Grid1L;
+export default HomePageMainGrid;
