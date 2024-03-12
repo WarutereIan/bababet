@@ -1,5 +1,6 @@
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 
+import "./AppSideBar.css";
 export const AppSideBar = () => {
   return (
     <Sidebar
@@ -52,6 +53,8 @@ export const AppSideBar = () => {
                 width: "100%",
                 top: "70%",
                 borderRadius: "2px",
+                fontSize: "13",
+                fontWeight: 600,
               }}
             >
               BETSLIP
@@ -65,7 +68,14 @@ export const AppSideBar = () => {
             justifyContent: "space-evenly",
           }}
         >
-          <MenuItem style={{ backgroundColor: "#1F6AB0", borderRadius: "2px" }}>
+          <MenuItem
+            style={{
+              backgroundColor: "#1F6AB0",
+              borderRadius: "2px",
+              fontSize: "13",
+              fontWeight: 600,
+            }}
+          >
             PAYBILL ITEMS
           </MenuItem>
         </Menu>

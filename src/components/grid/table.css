@@ -1,0 +1,41 @@
+table {
+  /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  border: 1px;
+  width: fit-content;
+}
+
+table td,
+table th {
+  /* border: 1px solid #ddd; */
+  padding: 4px;
+}
+
+table th {
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+table td {
+  font-family: Inter;
+  font-size: 13;
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+/* table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+} */
+
+table th,
+tfoot td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+
+  color: #e5c6bb;
+}

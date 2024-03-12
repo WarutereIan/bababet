@@ -1,3 +1,5 @@
+import "./AppBar.css";
+
 function ResponsiveAppBar() {
   return (
     <nav
@@ -44,7 +46,12 @@ function ResponsiveAppBar() {
             position: "relative",
           }}
         >
-          <a href="#">Home</a>
+          <a
+            href="#"
+            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
+          >
+            Home
+          </a>
         </li>
         <li
           style={{
@@ -53,7 +60,12 @@ function ResponsiveAppBar() {
             position: "relative",
           }}
         >
-          <a href="#">Home</a>
+          <a
+            href="#"
+            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
+          >
+            Home
+          </a>
         </li>
         <li
           style={{
@@ -62,7 +74,12 @@ function ResponsiveAppBar() {
             position: "relative",
           }}
         >
-          <a href="#">Home</a>
+          <a
+            href="#"
+            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
+          >
+            Home
+          </a>
         </li>
         <li
           style={{
@@ -71,7 +88,12 @@ function ResponsiveAppBar() {
             position: "relative",
           }}
         >
-          <a href="#">Home</a>
+          <a
+            href="#"
+            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
+          >
+            Home
+          </a>
         </li>
         <li
           style={{
@@ -80,7 +102,12 @@ function ResponsiveAppBar() {
             position: "relative",
           }}
         >
-          <a href="#">Home</a>
+          <a
+            href="#"
+            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
+          >
+            Home
+          </a>
         </li>
         <li
           style={{
@@ -89,7 +116,12 @@ function ResponsiveAppBar() {
             position: "relative",
           }}
         >
-          <a href="#">Home</a>
+          <a
+            href="#"
+            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
+          >
+            Home
+          </a>
         </li>
       </ul>
 
@@ -105,15 +137,22 @@ function ResponsiveAppBar() {
             backgroundColor: "#A3411F",
             padding: "5px 20px",
             borderRadius: "3px",
+            fontFamily: "Inter",
+            fontWeight: 800,
+            fontSize: "12px",
+            width: "91px",
           }}
         >
-          LogIn
+          Log In
         </button>
         <a
           href="/register"
           style={{
             padding: "5px 20px",
             borderRadius: "3px",
+            fontFamily: "Inter",
+            fontWeight: 400,
+            fontSize: "12px",
           }}
         >
           Register
