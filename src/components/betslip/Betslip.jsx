@@ -7,7 +7,8 @@ const Betslip = () => {
   const _arrValues = Object.values(picks);
 
   return (
-    <div
+    <>
+      {/* <div
       style={{
         display: "flex",
         flexDirection: "column",
@@ -18,7 +19,23 @@ const Betslip = () => {
       {_arrValues.map((pick) => {
         return <div key={pick.matchId}>{pick.matchId}</div>;
       })}
-    </div>
+    </div> */}
+      <div>
+        {" "}
+        {_arrValues.length !== 0
+          ? _arrValues.map((pick) => {
+              return (
+                <div
+                  key={pick.matchId}
+                  style={{ width: "99.76%", height: "9.47%" }}
+                >
+                  <span>{`${pick.homeTeam} - ${pick.awayTeam}`}</span>
+                </div>
+              );
+            })
+          : "No picks provided"}
+      </div>
+    </>
   );
 };
 

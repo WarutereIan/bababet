@@ -1,6 +1,5 @@
-import { useState } from "react";
 import "./AppSideBar.css";
-import Modal from "@mui/material/Modal";
+import Popup from "reactjs-popup";
 import Betslip from "../betslip/Betslip";
 
 export const AppSideBar = () => {
@@ -15,9 +14,9 @@ export const AppSideBar = () => {
     textAlign: "left",
   };
 
-  const [betslipModalDisplayed, setBetslipModalDisplayed] = useState(false);
+  /* const [betslipModalDisplayed, setBetslipModalDisplayed] = useState(false);
   const handleOpen = () => setBetslipModalDisplayed(true);
-  const handleClose = () => setBetslipModalDisplayed(false);
+  const handleClose = () => setBetslipModalDisplayed(false); */
   return (
     <div style={{ width: "100%" }}>
       <div
@@ -52,39 +51,31 @@ export const AppSideBar = () => {
         </nav>
       </div>
 
-      <Modal
-        open={betslipModalDisplayed}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Betslip></Betslip>
-      </Modal>
       <div style={{ height: "24%", paddingLeft: "6%", paddingRight: "6%" }}>
-        <button
-          style={{
-            marginTop: "72%",
-            backgroundColor: "rgba(31,106,176,0.78)",
-            width: "100%",
-            borderRadius: "3px",
-            fontSize: "13px",
-            fontWeight: "600",
-            fontFamily: "Inter",
-            color: "#D9D9D9",
-            textAlign: "left",
-          }}
-          onClick={handleOpen}
+        <Popup
+          trigger={
+            <button
+              style={{
+                marginTop: "72%",
+                backgroundColor: "rgba(31,106,176,0.78)",
+                width: "100%",
+                borderRadius: "3px",
+                fontSize: "13px",
+                fontWeight: "600",
+                fontFamily: "Inter",
+                color: "#D9D9D9",
+                textAlign: "left",
+              }}
+            >
+              <p>BETSLIP</p>
+            </button>
+          }
+          modal
+          position={"bottom right"}
         >
-          <p
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "flex-start",
-            }}
-          >
-            BETSLIP
-          </p>
-        </button>
+          {(close) => <Betslip></Betslip>}
+        </Popup>
+
         <button
           style={{
             marginTop: "20%",

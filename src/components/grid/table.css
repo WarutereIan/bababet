@@ -19,6 +19,7 @@ table th {
 
 table td {
   font-family: Inter;
+  font-size: 12px;
 }
 
 /* table tr:nth-child(even) {
