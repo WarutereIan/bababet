@@ -9,11 +9,13 @@ function App() {
     <main>
       <div className="App">
         <GamePicksProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" exact element={<HomePage />} />
-            </Routes>
-          </BrowserRouter>
+          <>
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" exact element={<HomePage />} />
+              </Routes>
+            </BrowserRouter>
+          </>
         </GamePicksProvider>
       </div>
     </main>
