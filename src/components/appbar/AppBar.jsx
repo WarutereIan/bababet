@@ -1,24 +1,7 @@
-import "./AppBar.css";
-
 function ResponsiveAppBar() {
   return (
-    <nav
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "flex-end",
-        gap: "30%",
-        backgroundImage: "url(./navbar_bg.svg)",
-        fontFamily: "Inter",
-        fontSize: 14,
-        fontStyle: "revert",
-
-        maxWidth: "100%",
-        position: "relative",
-        height: "50px",
-      }}
-    >
-      <a href="#" style={{ marginLeft: 0, position: "relative" }}>
+    <>
+      <a href="#" style={{ marginLeft: 0, position: "absolute" }}>
         <img
           style={{
             height: "50px",
@@ -30,135 +13,176 @@ function ResponsiveAppBar() {
           src={"/bababet_logo.svg"}
         />
       </a>
-
-      <ul
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-around",
-          position: "relative",
-        }}
-      >
-        <li
-          style={{
-            listStyle: "none",
-            padding: "0 20px",
-            position: "relative",
-          }}
-        >
-          <a
-            href="#"
-            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
-          >
-            Home
-          </a>
-        </li>
-        <li
-          style={{
-            listStyle: "none",
-            padding: "0 20px",
-            position: "relative",
-          }}
-        >
-          <a
-            href="#"
-            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
-          >
-            Categories
-          </a>
-        </li>
-        <li
-          style={{
-            listStyle: "none",
-            padding: "0 20px",
-            position: "relative",
-          }}
-        >
-          <a
-            href="#"
-            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
-          >
-            Live Bets
-          </a>
-        </li>
-        <li
-          style={{
-            listStyle: "none",
-            padding: "0 20px",
-            position: "relative",
-          }}
-        >
-          <a
-            href="#"
-            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
-          >
-            Casino Games
-          </a>
-        </li>
-        <li
-          style={{
-            listStyle: "none",
-            padding: "0 20px",
-            position: "relative",
-          }}
-        >
-          <a
-            href="#"
-            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
-          >
-            Promotions
-          </a>
-        </li>
-        <li
-          style={{
-            listStyle: "none",
-            padding: "0 20px",
-            //position: "relative",
-          }}
-        >
-          <a
-            href="#"
-            style={{ fontFamily: "Inter", fontSize: "12px", fontWeight: "400" }}
-          >
-            About Us
-          </a>
-        </li>
-      </ul>
-
-      <div
+      <nav
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-end",
+
+          backgroundImage: "url(./navbar_bg.svg)",
+          fontFamily: "Inter",
+          fontSize: 14,
+          fontStyle: "revert",
+
+          maxWidth: "100%",
+          position: "relative",
+          height: "50px",
         }}
       >
-        <button
+        <ul
           style={{
-            backgroundColor: "#A3411F",
-            padding: "5px 20px",
-            borderRadius: "3px",
-            fontFamily: "Inter",
-            fontWeight: 800,
-            fontSize: "12px",
-            width: "91px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            position: "relative",
+            marginLeft: "50%",
           }}
         >
-          Log In
-        </button>
-        <a
-          href="/register"
+          <li
+            style={{
+              listStyle: "none",
+              padding: "0 20px",
+              position: "relative",
+            }}
+          >
+            <a
+              href="#"
+              style={{
+                fontFamily: "Inter",
+                fontSize: "12px",
+                fontWeight: "400",
+              }}
+            >
+              Home
+            </a>
+          </li>
+          <li
+            style={{
+              listStyle: "none",
+              padding: "0 20px",
+              position: "relative",
+            }}
+          >
+            <a
+              href="#"
+              style={{
+                fontFamily: "Inter",
+                fontSize: "12px",
+                fontWeight: "400",
+              }}
+            >
+              Categories
+            </a>
+          </li>
+          <li
+            style={{
+              listStyle: "none",
+              padding: "0 20px",
+              position: "relative",
+            }}
+          >
+            <a
+              href="#"
+              style={{
+                fontFamily: "Inter",
+                fontSize: "12px",
+                fontWeight: "400",
+              }}
+            >
+              Live Bets
+            </a>
+          </li>
+          <li
+            style={{
+              listStyle: "none",
+              padding: "0 20px",
+              position: "relative",
+            }}
+          >
+            <a
+              href="#"
+              style={{
+                fontFamily: "Inter",
+                fontSize: "12px",
+                fontWeight: "400",
+              }}
+            >
+              Casino Games
+            </a>
+          </li>
+          <li
+            style={{
+              listStyle: "none",
+              padding: "0 20px",
+              position: "relative",
+            }}
+          >
+            <a
+              href="#"
+              style={{
+                fontFamily: "Inter",
+                fontSize: "12px",
+                fontWeight: "400",
+              }}
+            >
+              Promotions
+            </a>
+          </li>
+          <li
+            style={{
+              listStyle: "none",
+              padding: "0 20px",
+              //position: "relative",
+            }}
+          >
+            <a
+              href="#"
+              style={{
+                fontFamily: "Inter",
+                fontSize: "12px",
+                fontWeight: "400",
+              }}
+            >
+              About Us
+            </a>
+          </li>
+        </ul>
+
+        <div
           style={{
-            padding: "5px 20px",
-            borderRadius: "3px",
-            fontFamily: "Inter",
-            fontWeight: 400,
-            fontSize: "12px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-end",
           }}
         >
-          Register
-        </a>
-      </div>
-    </nav>
+          <button
+            style={{
+              backgroundColor: "#A3411F",
+              padding: "5px 20px",
+              borderRadius: "3px",
+              fontFamily: "Inter",
+              fontWeight: 800,
+              fontSize: "12px",
+              width: "91px",
+            }}
+          >
+            Log In
+          </button>
+          <a
+            href="/register"
+            style={{
+              padding: "5px 20px",
+              borderRadius: "3px",
+              fontFamily: "Inter",
+              fontWeight: 400,
+              fontSize: "12px",
+            }}
+          >
+            Register
+          </a>
+        </div>
+      </nav>
+    </>
   );
 }
 export default ResponsiveAppBar;

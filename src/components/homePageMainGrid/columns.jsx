@@ -1,4 +1,5 @@
 const cellWidth = "69px";
+const picks = {};
 
 export const columnDef = [
   {
@@ -19,6 +20,18 @@ export const columnDef = [
             width: cellWidth,
             borderRadius: "5px",
           }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "threeway";
+            selection.betsOn = "Home";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.threeWay.home;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
+          }}
         >
           {row.row.original.odds.threeWay.home}
         </button>
@@ -35,6 +48,18 @@ export const columnDef = [
             backgroundColor: "rgba(255, 255, 255, 0.19)",
             width: cellWidth,
             borderRadius: "5px",
+          }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "threeway";
+            selection.betsOn = "draw";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.threeWay.draw;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
           }}
         >
           {row.row.original.odds.threeWay.draw}
@@ -56,6 +81,18 @@ export const columnDef = [
 
             textAlign: "center",
           }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "threeway";
+            selection.betsOn = "Away";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.threeWay.away;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
+          }}
         >
           {row.row.original.odds.threeWay.away}
         </button>
@@ -75,6 +112,18 @@ export const columnDef = [
             width: cellWidth,
 
             textAlign: "center",
+          }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "doubleChance";
+            selection.betsOn = "Home";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.doubleChance.home;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
           }}
         >
           {row.row.original.odds.doubleChance.home}
@@ -96,6 +145,18 @@ export const columnDef = [
 
             textAlign: "center",
           }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "doubleChance";
+            selection.betsOn = "Draw";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.doubleChance.draw;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
+          }}
         >
           {row.row.original.odds.doubleChance.draw}
         </button>
@@ -115,6 +176,18 @@ export const columnDef = [
             width: cellWidth,
 
             textAlign: "center",
+          }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "doubleChance";
+            selection.betsOn = "Away";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.doubleChance.away;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
           }}
         >
           {row.row.original.odds.doubleChance.away}
@@ -136,6 +209,18 @@ export const columnDef = [
 
             textAlign: "center",
           }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "over_under";
+            selection.betsOn = "Over";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.over_under.over;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
+          }}
         >
           {row.row.original.odds.over_under.over}
         </button>
@@ -155,6 +240,18 @@ export const columnDef = [
             width: cellWidth,
 
             textAlign: "center",
+          }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "over_under";
+            selection.betsOn = "Under";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.over_under.under;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
           }}
         >
           {row.row.original.odds.over_under.under}
@@ -176,6 +273,18 @@ export const columnDef = [
 
             textAlign: "center",
           }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "bothToScore";
+            selection.betsOn = "Yes";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.bothToScore.yes;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
+          }}
         >
           {row.row.original.odds.bothToScore.yes}
         </button>
@@ -195,6 +304,18 @@ export const columnDef = [
             width: cellWidth,
 
             textAlign: "center",
+          }}
+          onClick={() => {
+            const selection = {};
+            selection.matchId = row.row.original.matchId;
+            selection.oddsType = "bothToScore";
+            selection.betsOn = "No";
+            selection.homeTeam = row.row.original.homeTeam;
+            selection.awayTeam = row.row.original.awayTeam;
+            selection.odds = row.row.original.odds.bothToScore.no;
+            picks[`${selection.matchId}`] = selection;
+
+            console.log("picks", picks);
           }}
         >
           {row.row.original.odds.bothToScore.no}

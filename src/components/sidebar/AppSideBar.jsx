@@ -1,4 +1,8 @@
+import { useState } from "react";
 import "./AppSideBar.css";
+import Modal from "@mui/material/Modal";
+import Betslip from "../betslip/Betslip";
+
 export const AppSideBar = () => {
   const buttonStyle = {
     backgroundColor: "inherit",
@@ -11,87 +15,11 @@ export const AppSideBar = () => {
     textAlign: "left",
   };
 
+  const [betslipModalDisplayed, setBetslipModalDisplayed] = useState(false);
+  const handleOpen = () => setBetslipModalDisplayed(true);
+  const handleClose = () => setBetslipModalDisplayed(false);
   return (
     <div style={{ width: "100%" }}>
-      {/* <Sidebar
-      backgroundColor="black"
-      color="black"
-      width="200px"
-      style={{
-        height: "100%",
-
-        marginLeft: 0,
-        borderRadius: "10px",
-        //top: "5%",
-        //position: "relative",
-
-        color: "#D9D9D9",
-      }}
-    >
-      <div
-        style={{
-          height: "60%",
-          backgroundColor: "#A3411F",
-          borderRadius: "10px",
-        }}
-      >
-        <Menu>
-          <MenuItem>Country</MenuItem>
-          <MenuItem>League</MenuItem>
-          <MenuItem>Todays Games</MenuItem>
-          <MenuItem>Upcoming Games</MenuItem>
-        </Menu>
-      </div>
-
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          height: "16%",
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-between",
-          flexDirection: "column",
-        }}
-      >
-        <div>
-          <Menu>
-            <MenuItem
-              style={{
-                backgroundColor: "#1F6AB0",
-                position: "absolute",
-                width: "100%",
-                top: "70%",
-                borderRadius: "2px",
-                fontSize: "13",
-                fontWeight: 600,
-              }}
-            >
-              BETSLIP
-            </MenuItem>
-          </Menu>
-        </div>
-        <Menu
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-evenly",
-          }}
-        >
-          <MenuItem
-            style={{
-              backgroundColor: "#1F6AB0",
-              borderRadius: "2px",
-              fontSize: "13",
-              fontWeight: 600,
-            }}
-          >
-            PAYBILL ITEMS
-          </MenuItem>
-        </Menu>
-      </div>
-    </Sidebar> */}
-
       <div
         style={{
           height: "64.55%",
@@ -124,6 +52,14 @@ export const AppSideBar = () => {
         </nav>
       </div>
 
+      <Modal
+        open={betslipModalDisplayed}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Betslip></Betslip>
+      </Modal>
       <div style={{ height: "24%", paddingLeft: "6%", paddingRight: "6%" }}>
         <button
           style={{
@@ -137,6 +73,7 @@ export const AppSideBar = () => {
             color: "#D9D9D9",
             textAlign: "left",
           }}
+          onClick={handleOpen}
         >
           <p
             style={{
