@@ -6,6 +6,8 @@ const Betslip = () => {
 
   const _arrValues = Object.values(picks);
 
+  //need a betslip container within which I will pass the pick values as props
+
   return (
     <>
       {/* <div
@@ -27,7 +29,7 @@ const Betslip = () => {
               return (
                 <div
                   key={pick.matchId}
-                  style={{ width: "99.76%", height: "9.47%" }}
+                  style={{ width: "200px", height: "auto" }}
                 >
                   <span>{`${pick.homeTeam} - ${pick.awayTeam}`}</span>
                 </div>
